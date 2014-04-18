@@ -1,0 +1,24 @@
+{
+  "name": "bootswatch-sass",
+  "description": "Bootswatch Sass is Bootswatch ported from Less to Sass.",
+  "version": "0.1.0",
+  "author": "Victor Potasso",
+  "homepage": "http://victorpotasso.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victorpotasso/bootswatch-sass.git"
+  },
+  "engines": {
+    "node": ">= 0.8.11"
+  },
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.4.0"
+  }
+}

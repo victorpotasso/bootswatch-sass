@@ -1,0 +1,8 @@
+// Bootswatch _variables.scss
+@import "variables";
+
+// Bootstrap without _variables.scss
+@import "../../src/sass/bootstrap";
+
+// Bootswatch Theme
+@import "bootswatch";
