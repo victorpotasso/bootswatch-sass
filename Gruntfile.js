@@ -17,7 +17,11 @@ module.exports = function (grunt)
             ' * Based on Bootswatch (http://bootswatch.com/)\n' +
             '*/\n',
 
-        builddir: "./themes",
+        themes_dir: "./themes",
+
+        assets_dir: "../../src",
+
+        source_dir: "./src",
         
         themes: grunt.file.readJSON('themes.json'),
         
@@ -41,22 +45,22 @@ module.exports = function (grunt)
         uglify: {
             bootstrap: {
                 files: {
-                    'src/js/bootstrap.min.js': [                        
-                        'src/js/bootstrap/transition.js',
-                        'src/js/bootstrap/alert.js',
-                        'src/js/bootstrap/button.js',
-                        'src/js/bootstrap/carousel.js',
-                        'src/js/bootstrap/collapse.js',
-                        'src/js/bootstrap/dropdown.js',
-                        'src/js/bootstrap/modal.js',
-                        'src/js/bootstrap/tooltip.js',
-                        'src/js/bootstrap/popover.js',
-                        'src/js/bootstrap/scrollspy.js',
-                        'src/js/bootstrap/tab.js',
-                        'src/js/bootstrap/affix.js'
+                    '<%= source_dir %>/js/bootstrap.min.js': [                        
+                        '<%= source_dir %>/js/bootstrap/transition.js',
+                        '<%= source_dir %>/js/bootstrap/alert.js',
+                        '<%= source_dir %>/js/bootstrap/button.js',
+                        '<%= source_dir %>/js/bootstrap/carousel.js',
+                        '<%= source_dir %>/js/bootstrap/collapse.js',
+                        '<%= source_dir %>/js/bootstrap/dropdown.js',
+                        '<%= source_dir %>/js/bootstrap/modal.js',
+                        '<%= source_dir %>/js/bootstrap/tooltip.js',
+                        '<%= source_dir %>/js/bootstrap/popover.js',
+                        '<%= source_dir %>/js/bootstrap/scrollspy.js',
+                        '<%= source_dir %>/js/bootstrap/tab.js',
+                        '<%= source_dir %>/js/bootstrap/affix.js'
                     ],
-                    'src/js/jquery-2.1.0.min.js': [                        
-                        'src/js/jquery-2.1.0.js'
+                    '<%= source_dir %>/js/jquery-2.1.0.min.js': [                        
+                        '<%= source_dir %>/js/jquery-2.1.0.js'
                     ]
 
                 }
@@ -74,8 +78,8 @@ module.exports = function (grunt)
         preprocess : {
             
             html : {
-                src :  '<%=builddir%>/global/index.html',
-                dest : '<%=builddir%>/yeti/index.html',
+                src :  '<%=themes_dir%>/global/index.html',
+                dest : '<%=themes_dir%>/yeti/index.html',
 
                 options : {
                     context : {
@@ -116,16 +120,16 @@ module.exports = function (grunt)
         var dist = {};
 
         // global build.scss
-        concatSrc  = '<%=builddir%>/global/build.scss';
+        concatSrc  = '<%=themes_dir%>/global/build.scss';
         
         // dis for build.scss
-        concatDest = '<%=builddir%>/' + theme + '/build.scss';
+        concatDest = '<%=themes_dir%>/' + theme + '/build.scss';
 
         // sass from build.scss
-        sassSrc    = [ '<%=builddir%>/' + theme + '/' + 'build.scss' ];
+        sassSrc    = [ '<%=themes_dir%>/' + theme + '/' + 'build.scss' ];
 
         // sass to bootstrap.css
-        sassDest   = '<%=builddir%>/' + theme + '/bootstrap.css';
+        sassDest   = '<%=themes_dir%>/' + theme + '/bootstrap.css';
        
         // concat
         dist = {src: concatSrc, dest: concatDest};
@@ -146,13 +150,14 @@ module.exports = function (grunt)
         //preprocess index.html
         var preprocess_config = {};
         preprocess_config[theme] = {
-            src :  '<%=builddir%>/global/index.html',
-            dest : '<%=builddir%>/' + theme + '/index.html',
+            src :  '<%=themes_dir%>/global/index.html',
+            dest : '<%=themes_dir%>/' + theme + '/index.html',
 
             options : {
                 context : {
                     title : theme_attrs.title,
-                    description : theme_attrs.description
+                    description : theme_attrs.description,
+                    assets_dir: "<%= assets_dir %>"
                 }
             }
         }
@@ -193,7 +198,7 @@ module.exports = function (grunt)
         for(var theme in themes)
         {
             watch_config[theme] = {
-                files: ['<%=builddir%>/' + theme + '/*.scss'],
+                files: ['<%=themes_dir%>/' + theme + '/*.scss'],
                 tasks: ['build:'+theme]
             };
         }
