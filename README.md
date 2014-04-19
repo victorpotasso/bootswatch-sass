@@ -11,7 +11,8 @@ Changes
 + Ported Bootswatch from LESS to SASS.
 + Task *watch-themes* added.
 + Using [preprocess](https://github.com/jsoverson/grunt-preprocess) to provide theme's index.html
-+ Create *themes.json* to control which themes will be compiled and also its title and description.
++ Created *themes.json* file to control which themes will be compiled and also its title and description.
++ Directories was rearranged.
 
 Author
 ------
