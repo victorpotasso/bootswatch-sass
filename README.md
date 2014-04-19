@@ -1,4 +1,5 @@
 # [Bootswatch](http://bootswatch.com) forked by [Victor Potasso](http://victorpotasso.com)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 What is it?
 -----------
