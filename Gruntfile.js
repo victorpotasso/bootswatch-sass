@@ -19,7 +19,7 @@ module.exports = function (grunt)
 
         builddir: "./themes",
 
-        swatch: {
+        themes: {
             default:{},
             united:{},
             yeti:{}
@@ -139,18 +139,18 @@ module.exports = function (grunt)
     });
     
     /**
-     * Run build task for every theme on swatch object
+     * Run build task for every theme on themes object
      */
-    grunt.registerMultiTask('swatch', 'build a theme', function() {
+    grunt.registerMultiTask('themes', 'build a theme', function() {
         var theme = this.target;
         grunt.task.run('build:' + theme);
     });
 
     /**
-     * Set swatch task as default
+     * Set themes task as default
      */
     grunt.registerTask('default', 'build a theme', function() {
-        grunt.task.run('swatch');
+        grunt.task.run('themes');
     });
 
     /**
@@ -161,7 +161,7 @@ module.exports = function (grunt)
         var watch_config = {};
         
         //get all themes
-        var themes = grunt.config.get('swatch');
+        var themes = grunt.config.get('themes');
               
         // set configurations on watch object
         for(var theme in themes)
