@@ -18,26 +18,9 @@ module.exports = function (grunt)
             '*/\n',
 
         builddir: "./themes",
-
-        themes: {
-            default:{
-                        title:"Default",
-                        description: "Basic Bootstrap"
-                    },
-            united: {
-                        title:"United",
-                        description: "Ubuntu orange and unique font"
-                    },
-            yeti:   {
-                        title:"Yeti",
-                        description: "A friendly foundation"
-                    },
-            amelia: {
-                        title:"Amelia",
-                        description:"Sweet and cheery"
-                    }
-        },
-
+        
+        themes: grunt.file.readJSON('themes.json'),
+        
         clean: {
             build: {
                 src: []
