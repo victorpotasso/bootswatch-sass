@@ -153,8 +153,10 @@ module.exports = function (grunt)
         //clean
         grunt.config('clean.build.src', [sassSrc]);
 
-        //preprocess index.html
+        //get theme attributes
         var theme_attrs = grunt.config.get('themes.' + theme);
+        
+        //preprocess index.html
         var preprocess_config = {};
         preprocess_config[theme] = {
             src :  '<%=builddir%>/global/index.html',
