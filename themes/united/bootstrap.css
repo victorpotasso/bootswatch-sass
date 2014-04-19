@@ -5024,7 +5024,9 @@ button.close {
   .navbar .nav-collapse .navbar-form,
   .navbar .nav-collapse .navbar-search {
     border-top: 0px solid orange;
-    border-bottom: 0px solid orange; }
+    border-bottom: 0px solid orange;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   .navbar .nav-collapse .nav-header {
     color: #aea79f; } }
 .nav-tabs .open .dropdown-toggle,
