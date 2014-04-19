@@ -13,7 +13,6 @@
     "node": ">= 0.8.11"
   },
   "devDependencies": {
-    "bower": "~1.2.8",
     "grunt": "^0.4.4",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-concat": "~0.3.0",

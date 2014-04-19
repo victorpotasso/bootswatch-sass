@@ -76,20 +76,7 @@ module.exports = function (grunt)
 
         watch: {},
 
-        preprocess : {
-            
-            html : {
-                src :  '<%=dir.themes%>/global/index.html',
-                dest : '<%=dir.themes%>/yeti/index.html',
-
-                options : {
-                    context : {
-                        title : 'POTASSO-TITLE',
-                        description : 'POTASSO_DESCRIPTION'
-                    }
-                }
-            }
-        }
+        preprocess : {}
     });
 
     /**
