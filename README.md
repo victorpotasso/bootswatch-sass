@@ -8,7 +8,7 @@ Changes
 -------
 
 + Ported Bootswatch from LESS to SASS.
-+ Task **watch-themes** added.
++ Task <pre>watch-themes</pre> added.
 
 Author
 ------
