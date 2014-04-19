@@ -69,12 +69,17 @@ module.exports = function (grunt)
 
         sass: {
             dist: {
-                options: {
-                  compress: false
-                },
                 files: {}
             }     
         },
+
+        watch: {
+
+            default: {
+                files: ['<%=builddir%>/default/*.scss'],
+                tasks: ['build:default']
+            },
+        }
     });
 
     /**
@@ -86,8 +91,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-uglify');    
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
-        
-    
+       
     /**
      * Register Custom Tasks
      */
@@ -147,5 +151,31 @@ module.exports = function (grunt)
      */
     grunt.registerTask('default', 'build a theme', function() {
         grunt.task.run('swatch');
+    });
+
+    /**
+     * Watch all themes
+     */
+    grunt.registerTask('watch-themes', 'watch all themes', function() {
+        
+        var watch_config = {};
+        
+        //get all themes
+        var themes = grunt.config.get('swatch');
+              
+        // set configurations on watch object
+        for(var theme in themes)
+        {
+            watch_config[theme] = {
+                files: ['<%=builddir%>/' + theme + '/*.scss'],
+                tasks: ['build:'+theme]
+            };
+        }
+        
+        // configure watch task
+        grunt.config('watch', watch_config);
+
+        //run watch task
+        grunt.task.run('watch');
     });
 };
