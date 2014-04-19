@@ -31,6 +31,10 @@ module.exports = function (grunt)
             yeti:   {
                         title:"Yeti",
                         description: "A friendly foundation"
+                    },
+            amelia: {
+                        title:"Amelia",
+                        description:"Sweet and cheery"
                     }
         },
 
