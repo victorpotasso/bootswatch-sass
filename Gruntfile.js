@@ -20,9 +20,18 @@ module.exports = function (grunt)
         builddir: "./themes",
 
         themes: {
-            default:{},
-            united:{},
-            yeti:{}
+            default:{
+                        title:"Default",
+                        description: "Basic Bootstrap"
+                    },
+            united: {
+                        title:"United",
+                        description: "Ubuntu orange and unique font"
+                    },
+            yeti:   {
+                        title:"Yeti",
+                        description: "A friendly foundation"
+                    }
         },
 
         clean: {
@@ -73,12 +82,21 @@ module.exports = function (grunt)
             }     
         },
 
-        watch: {
+        watch: {},
 
-            default: {
-                files: ['<%=builddir%>/default/*.scss'],
-                tasks: ['build:default']
-            },
+        preprocess : {
+            
+            html : {
+                src :  '<%=builddir%>/global/index.html',
+                dest : '<%=builddir%>/yeti/index.html',
+
+                options : {
+                    context : {
+                        title : 'POTASSO-TITLE',
+                        description : 'POTASSO_DESCRIPTION'
+                    }
+                }
+            }
         }
     });
 
@@ -91,6 +109,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-uglify');    
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-preprocess');
        
     /**
      * Register Custom Tasks
@@ -134,8 +153,26 @@ module.exports = function (grunt)
         //clean
         grunt.config('clean.build.src', [sassSrc]);
 
+        //preprocess index.html
+        var theme_attrs = grunt.config.get('themes.' + theme);
+        var preprocess_config = {};
+        preprocess_config[theme] = {
+            src :  '<%=builddir%>/global/index.html',
+            dest : '<%=builddir%>/' + theme + '/index.html',
+
+            options : {
+                context : {
+                    title : theme_attrs.title,
+                    description : theme_attrs.description
+                }
+            }
+        }
+
+        // configure preprocess
+        grunt.config('preprocess', preprocess_config);
+
         // runs tasks
-        grunt.task.run(['concat', 'sass:dist', 'clean:build']);
+        grunt.task.run(['concat', 'sass:dist', 'clean:build', 'preprocess:'+theme]);
     });
     
     /**
@@ -177,5 +214,11 @@ module.exports = function (grunt)
 
         //run watch task
         grunt.task.run('watch');
+    });
+
+    /**
+     * Test
+     */
+    grunt.registerTask('test', 'test function', function() {
     });
 };
