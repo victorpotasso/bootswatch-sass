@@ -25,6 +25,7 @@ Thanks
 ------
 + [Mark Otto](http://github.com/markdotto) and [Jacob Thornton](http://github.com/fat) for [Bootstrap](https://github.com/twitter/bootstrap).
 + [Thomas Park](http://github.com/thomaspark) for [Bootswatch](http://bootswatch.com)
++ [jQuery Team](http://jquery.com/) for [jQuery Team](https://github.com/jquery/jquery)
 
 
 Copyright (c) Bootswatch SASS
