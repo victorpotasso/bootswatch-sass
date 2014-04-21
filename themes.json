@@ -44,6 +44,11 @@
         "description":"Light and shadow"
     },
 
+    "readable" : {
+        "title":"Readable",
+        "description":"Optimized for legibility"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
