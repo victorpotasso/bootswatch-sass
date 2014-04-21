@@ -29,6 +29,11 @@
         "description":"Flatly in night mode"
     },
 
+    "flatly" : {
+        "title":"Flatly",
+        "description":"Flat and modern"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
