@@ -14,6 +14,15 @@ Changes
 + Created *themes.json* file to control which theme will be compiled and also its title and description.
 + Directories was rearranged.
 
+Getting Started
+---------------
+
+If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you're familiar with that process, installs the dependences with this command:
+
+```shell
+$ npm install
+```
+
 Author
 ------
 Victor Potasso           
