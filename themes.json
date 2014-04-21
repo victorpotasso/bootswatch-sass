@@ -49,6 +49,11 @@
         "description":"Optimized for legibility"
     },
 
+    "simplex" : {
+        "title":"Simplex",
+        "description":"Mini and minimalist"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
