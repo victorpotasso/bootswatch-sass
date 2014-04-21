@@ -1,18 +1,26 @@
 {
-    "default":{
-                "title":"Default",
-                "description": "Basic Bootstrap"
-            },
-    "united": {
-                "title":"United",
-                "description": "Ubuntu orange and unique font"
-            },
-    "yeti":   {
-                "title":"Yeti",
-                "description": "A friendly foundation"
-            },
-    "amelia": {
-                "title":"Amelia",
-                "description":"Sweet and cheery"
-            }
+    "default" : {
+        "title":"Default",
+        "description": "Basic Bootstrap"
+    },
+
+    "amelia" : {
+        "title":"Amelia",
+        "description":"Sweet and cheery"
+    },
+
+    "cerulean" : {
+        "title":"Cerulean",
+        "description":"A calm blue sky"
+    },
+
+    "united" : {
+        "title":"United",
+        "description": "Ubuntu orange and unique font"
+    },
+
+    "yeti" : {
+        "title":"Yeti",
+        "description": "A friendly foundation"
+    } 
 }
