@@ -34,6 +34,11 @@
         "description":"Flat and modern"
     },
 
+    "journal" : {
+        "title":"Journal",
+        "description":"Crisp like a new sheet of paper"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
