@@ -54,6 +54,11 @@
         "description":"Mini and minimalist"
     },
 
+    "slate" : {
+        "title":"Slate",
+        "description":"Shades of gunmetal gray"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
