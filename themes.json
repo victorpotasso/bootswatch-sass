@@ -64,6 +64,11 @@
         "description":"Silvery and sleek"
     },
 
+    "superhero" : {
+        "title":"Superhero",
+        "description":"The brave and the blue"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
