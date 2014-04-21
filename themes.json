@@ -24,6 +24,11 @@
         "description":"Jet black and electric blue"
     },
 
+    "darkly" : {
+        "title":"Darkly",
+        "description":"Flatly in night mode"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
