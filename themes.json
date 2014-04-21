@@ -39,6 +39,11 @@
         "description":"Crisp like a new sheet of paper"
     },
 
+    "lumen" : {
+        "title":"Lumen",
+        "description":"Light and shadow"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
