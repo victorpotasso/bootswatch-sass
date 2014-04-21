@@ -59,6 +59,11 @@
         "description":"Shades of gunmetal gray"
     },
 
+    "spacelab" : {
+        "title":"Spacelab",
+        "description":"Silvery and sleek"
+    },
+
     "united" : {
         "title":"United",
         "description": "Ubuntu orange and unique font"
