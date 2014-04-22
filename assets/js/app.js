@@ -16,13 +16,13 @@ var getThemes = function(file)
         $.each( data, function( key, value ) 
         {            
             $("#content").find("#themes").append(
-            '<div class="col-lg-4 col-sm-6" style="padding-left:1em; padding-right:1em;">' +                    
-                
-                '<div class="jumbotron" style="height:420px; text-align:center">' +                            '<img src="themes/' + key + '/thumbnail.png" style="width:100%;">' + 
-                    '<h1>' + key + '</h1>' +
+            '<div id="container" class="col-lg-4 col-sm-6">' +                                    
+                '<div class="jumbotron">' +                            
+                    '<img src="themes/' + key + '/thumbnail.png" style="width:100%;">' + 
+                    '<h1>' + value.title + '</h1>' +
                     '<p>' + value.description + '</p>' +
-                    '<div class="btn-group" style="padding:0.5em;"><a class="btn btn-info" href="themes/' + key + '">Preview</a></div>' +
-                    '<div class="btn-group" style="padding:0.5em;">' +
+                    '<div class="btn-group"><a class="btn btn-info" href="themes/' + key + '">Preview</a></div>' +
+                    '<div class="btn-group">' +
                         '<a class="btn btn-info" target="_blank">Download</a>' +
                         '<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#" target="_blank">'+
                             '<span class="caret"></span>'+
@@ -37,8 +37,6 @@ var getThemes = function(file)
                 '</div>' +
             '</div>'
             );
-
-            console.log( key + ": " + value.description );
         });
     })
     .fail(function() {

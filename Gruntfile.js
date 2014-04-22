@@ -71,7 +71,10 @@ module.exports = function (grunt)
         sass: {
             dist: {
                 files: {}
-            }     
+            }, 
+            site: {
+                files: {'assets/css/app.css': 'src/sass/app.scss'}
+            }
         },
 
         watch: {},
