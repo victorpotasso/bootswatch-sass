@@ -3,7 +3,7 @@
 
 What is it?
 -----------
-[Bootswatch](http://bootswatch.com) is a collection of free themes for [Bootstrap](http://getbootstrap.com/). Check it out at [bootswatch.com](http://bootswatch.com).
+[Bootswatch Sass](http://bootswatchsass.victorpotasso.com/) is a conversion of [Bootswatch](http://bootswatch.com) from Less to Sass.
 
 Changes
 -------
@@ -11,7 +11,7 @@ Changes
 + Ported Bootswatch from LESS to SASS.
 + Task *watch-themes* added.
 + Using [preprocess](https://github.com/jsoverson/grunt-preprocess) to provide theme's index.html
-+ Created *themes.json* file to control which theme will be compiled and also its title and description.
++ Created [themes.json](https://github.com/victorpotasso/bootswatch-sass/blob/master/themes.json) file to control which theme will be compiled and also its title and description.
 + Directories was rearranged.
 
 Getting Started
@@ -29,6 +29,7 @@ Victor Potasso
 
 + http://github.com/victorpotasso
 + http://victorpotasso.com
++ http://bootswatchsass.victorpotasso.com
 
 Thanks
 ------
