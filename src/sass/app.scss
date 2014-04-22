@@ -1,0 +1,26 @@
+@import "bootstrap/variables";
+@import "bootstrap";
+
+#themes {
+
+    #container {
+        padding-left:1em; 
+        padding-right:1em;
+    }
+    
+    .jumbotron {
+        text-align:center;
+
+        @media (min-width: $screen-md-min) { 
+            height: 450px;        
+        }
+
+        @media (min-width: $screen-lg-min) { 
+            height: 470px;
+        }
+    }
+
+    .btn-group {
+        padding:0.5em;
+    }
+}
