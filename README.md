@@ -1,9 +1,14 @@
-# [Bootswatch](http://bootswatch.com) forked by [Victor Potasso](http://victorpotasso.com)
+## [Bootswatch](http://bootswatch.com) forked by [Victor Potasso](http://victorpotasso.com)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+* Source: [github.com/victorpotasso/bootswatch-sass](https://github.com/victorpotasso/bootswatch-sass)
+* Preview: [bootswatchsass.victorpotasso.com](http://bootswatchsass.victorpotasso.com)
+* Home Page: [victorpotasso.com/](http://www.victorpotasso.com)
+* Twitter: [@victorpotasso](https://twitter.com/victorpotasso)
 
 What is it?
 -----------
-[Bootswatch Sass](http://bootswatchsass.victorpotasso.com/) is a conversion of [Bootswatch](http://bootswatch.com) from Less to Sass.
+I think most of all developers are now working with [Sass](http://sass-lang.com/) instead of [Less](http://lesscss.org/) including myself. Thus I decided to porting Bootswatch to Sass. It was first made by [Bootstrap](http://getbootstrap.com) and now you can take advantage from it on [Bootswatch](http://bootswatch.com).
 
 Changes
 -------
