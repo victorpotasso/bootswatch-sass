@@ -1,0 +1,81 @@
+{
+    "default" : {
+        "title":"Default",
+        "description": "Basic Bootstrap"
+    },
+
+    "amelia" : {
+        "title":"Amelia",
+        "description":"Sweet and cheery"
+    },
+
+    "cerulean" : {
+        "title":"Cerulean",
+        "description":"A calm blue sky"
+    },
+
+    "cosmo" : {
+        "title":"Cosmo",
+        "description":"An ode to Metro"
+    },
+
+    "cyborg" : {
+        "title":"Cyborg",
+        "description":"Jet black and electric blue"
+    },
+
+    "darkly" : {
+        "title":"Darkly",
+        "description":"Flatly in night mode"
+    },
+
+    "flatly" : {
+        "title":"Flatly",
+        "description":"Flat and modern"
+    },
+
+    "journal" : {
+        "title":"Journal",
+        "description":"Crisp like a new sheet of paper"
+    },
+
+    "lumen" : {
+        "title":"Lumen",
+        "description":"Light and shadow"
+    },
+
+    "readable" : {
+        "title":"Readable",
+        "description":"Optimized for legibility"
+    },
+
+    "simplex" : {
+        "title":"Simplex",
+        "description":"Mini and minimalist"
+    },
+
+    "slate" : {
+        "title":"Slate",
+        "description":"Shades of gunmetal gray"
+    },
+
+    "spacelab" : {
+        "title":"Spacelab",
+        "description":"Silvery and sleek"
+    },
+
+    "superhero" : {
+        "title":"Superhero",
+        "description":"The brave and the blue"
+    },
+
+    "united" : {
+        "title":"United",
+        "description": "Ubuntu orange and unique font"
+    },
+
+    "yeti" : {
+        "title":"Yeti",
+        "description": "A friendly foundation"
+    } 
+}
