@@ -4,7 +4,7 @@
 I think most of all developers are now working with [Sass](http://sass-lang.com/) instead of [Less](http://lesscss.org/) including myself. Thus I decided to porting Bootswatch to Sass. It was first made by [Bootstrap](http://getbootstrap.com) and now you can take advantage from it on [Bootswatch](http://bootswatch.com).
 
 * Source: [github.com/victorpotasso/bootswatch-sass](https://github.com/victorpotasso/bootswatch-sass)
-* Preview: [bootswatchsass.victorpotasso.com](http://bootswatchsass.victorpotasso.com)
+* Preview: [http://bit.ly/1LRn64p](http://bit.ly/1LRn64p)
 * Home Page: [victorpotasso.com/](http://www.victorpotasso.com)
 * Twitter: [@victorpotasso](https://twitter.com/victorpotasso)
 
